@@ -1,0 +1,360 @@
+* {
+    font-family: 'Epilogue', sans-serif; 
+    margin: 0;  
+    padding: 0;
+}
+
+header {
+    padding: 14px 80px 10px;
+    background-color: #055866;
+    width: -webkit-fill-available;
+}
+
+.header-h1 {
+    background: #055866;
+    mix-blend-mode: normal;
+    border-radius: 11px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.header-h1-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 76px;
+    color: #FFFFFF;
+}
+
+.header-p-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    color: #FFFFFF;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-li-item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-li-item a:hover {
+    text-decoration: underline;
+}
+
+.header-button {
+    border-radius: 30px;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+.header-button:hover {
+    background-color: #C0C0C0;
+}
+
+.header-p2-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+
+}
+
+.header-p2-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+
+.About {
+    max-width: 1280px;
+    min-height: 400px;
+    margin: 115px 80px 0px;
+    align-items: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article-about-header {
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-left-frame {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
+.stars {
+    max-width: 170px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.about-review {
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 27px;
+    padding-top: 15px;
+    color: #000000;
+}
+
+.reviewer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    margin-top: 30px;
+    max-width: 400px;
+    max-height: 74px;
+}
+
+.reviewer-info-foto {
+    width: 61px;
+    height: 61px;
+    margin-right: 24px;
+}
+
+.reviewer-info-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+.reviewer-info-p1 {
+    margin-top: 10px;
+    width: max-content;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.reviewer-info-p2 {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.about-right-frame {
+    max-width: 790px;
+    width: 100%;
+    margin: 0px 0px 0px 487px;
+    margin-bottom: 74px;
+}
+
+.about-right-frame-h4 {
+    font-weight: 400;
+    font-size: 47px;
+    line-height: 52px;
+    margin: 0px 12px;
+}
+
+.work {
+    max-width: 1280px;
+    min-height: 2356px;
+    margin: 20px 80px 114px;
+    align-items: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article-work-header {
+    height: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-h4 {
+    max-width: 698px;
+    max-height: 132px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+#About-this {
+    width: 1440px;
+    height: 7887pxpx;
+    left: 0px;
+    top: 260px;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.about-image {
+    width: 600px;
+    height: 505px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.About-this-h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.About-this-arrow {
+    width: 28px;
+    height: 28px;
+}
+
+.button-work {
+    width: 600px;
+    height: 505px;
+    background-color: #9C92A3; 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0B3142;
+    border-color: aqua;
+    text-decoration: none;
+    }
+
+    .button-work:hover {
+        background-color: #d9d4dd;
+    }
+
+    .article-services-header {
+        height: 10px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #services-sec {
+        max-width: 1440px;
+        max-height: 870px;
+        padding: 144px 80px;
+        background-color: #0B3142;
+        color: #FFFFFF;
+    }
+
+    .services {
+        max-width: 1280px;
+        max-height: 582px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 54px;
+        max-width: 352px;
+    }
+
+    .services__item {
+        height: 283px;
+        width: 352px;
+    }
+
+    .services__item-icon {
+        width: 56px;
+        height: 56px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .services-h5 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .services-p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .services-button {
+        height: 69px;
+        width: 272px;
+        border-radius: 30px;
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .services-button:hover {
+        background-color: #DCDCDC;
+        cursor: pointer;
+    }
+
+    .services-button-waves {
+        width: 168px;
+        height: 44px;
+        margin-top: 34px;
+        padding-left: 150px;
+    }
+
+    .blog {
+        height: 1330px;
+        width: 1280px;
+        margin: 186px 68px 0px 92px;
+    }
+
+    .blog-header {
+        height: 10px;
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #9C92A3;
+    }
+    

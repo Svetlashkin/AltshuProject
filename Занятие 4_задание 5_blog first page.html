@@ -7,281 +7,323 @@
   <meta charset="UTF-8">
 
   <title>First Page</title>
+  <link rel="stylesheet" href="assets/CSS/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:wght@100;200;300;400&display=swap"
+    rel="stylesheet">
+
 
 </head>
 
 <body>
 
   <header>
-    <h1> <img src="./Vector header.png" width="15" alt="⬜"> blog |</h1>
+    <h1 class="header-h1"> <img src="./assets/images/Vector header.png" width="15" alt="⬜"> blog |</h1>
 
     <nav>
-      <ul>
+      <ul class="nav-list">
 
-        <li><a href="#about">About</a></li>
+        <li class="nav-li-item"><a href="#about">About</a></li>
 
-        <li><a href="#work">Work</a></li>
+        <li class="nav-li-item"><a href="#work">Work</a></li>
 
-        <li><a href="#blog">Blog</a></li>
+        <li class="nav-li-item"><a href="#blog">Blog</a></li>
 
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav-li-item"><a href="#contact">Contact</a></li>
 
-        <li><a href="#menu">=</a></li>
+        <li class="nav-li-item"><a href="#menu">=</a></li>
 
       </ul>
     </nav>
 
-    <h1> <b>I develop</b> awesome
+    <h1 class="header-h1-text"> <b>I develop</b> awesome
       <br>
       websites that
       <br>
       <b>make an impact.</b>
     </h1>
 
-    <p>Hi! I’m Svetlana, a Full Stack Developer
+    <p class="header-p-text">Hi! I’m Svetlana, a Full Stack Developer
       <br>
       based in Russia. I create information systems
       <br>
       for fast-growing startups.
     </p>
 
-    <p>
+    <button class="header-button">
       Write me!
-      <img src="https://github.com/Svetlashkin/AltshuProject/blob/main/envelope.png?raw=true" width="17" alt="✉️">
-    </p>
+      <img src="./assets/images/envelope.png" width="17" alt="✉️">
+    </button>
 
-    <img src="https://github.com/Svetlashkin/AltshuProject/blob/main/image%201.jpg?raw=true" width="300" alt="👩🏼‍💻">
+    <img class="header-image" src="./assets/images/image 1.jpg" width="300" alt="👩🏼‍💻">
 
-    <p><img src="./Vector header_2.png" width="17" alt="🏆">Passed the Altshu Web Developing Course <br>WebDevelopment
-      2022 • altshu.com</p>
+    <img class="header-p2-image" src="./assets/images/Vector header_2.png" width="17" alt="🏆">
+
+    <p class="header-p2-text">Passed the Altshu Web Developing Course </p>
+    <a class="header-p2-link" href="https://altshu.com/course"> WebDevelopment 2022 </a>
+    <a class="header-p2-link" href="https://altshu.com/"> • altshu.com </a>
 
   </header>
   <hr>
   <main>
 
     <section>
-      <article id="About">
-        <h3>
-          <img src="./Vector_wave.png" hight="10" alt="vector wave">
-          <b>ABOUT</b>
-        </h3>
-        <h4>Develop websites for fast<br>growing digital startups</h4>
-        <img src="./Vector_star.png" hight="10" alt="⭐">
-        <img src="./Vector_star.png" hight="10" alt="⭐">
-        <img src="./Vector_star.png" hight="10" alt="⭐">
-        <img src="./Vector_star.png" hight="10" alt="⭐">
-        <img src="./Vector_star.png" hight="10" alt="⭐">
-        <p>Working with Svetlana was interesting.<br>She is a high-organized person, that can<br>create simple websites
-          with Yii-2 and<br>React.js technologies.</p>
-        <h4><img src="./Rectangle%201.png" hight="10" alt="🔵">Anastasiya Smirnova
-          <p>Middle+ FullStack Developer in GEROPHARM</p>
-          <p>2+
-            <br>
-            Months of experience
-          </p>
-          <p>2+
-            <br>
-            Projects completed
-          </p>
-          <p>5
-            <br>
-            Technologies learnt
-          </p>
-          <p>
-            <img src="./icons8-html-64.png" width="30" alt="HTML+CSS"> <br>HTML+CSS
-            <br>
-            <img src="./javascript_logo_icon_181330.png" width="30" alt="JS logo">
-            <img src="./react_logo_icon_144942.png" width="30" alt="react logo">
-            <br>JS, React.js
-            <br>
-            <img src="./php_logo_icon_144990.png" width="30" alt="php logo">
-            <img src="./prog-yii_icon-icons.com_50765.png" width="30" alt="yii logo">
-            <br>PHP, YII-2
-            <br>
-            <img src="./brand_mysql_icon_157867.png" width="30" alt="mysql logo">
-            <br>MySQL
-          </p>
-        </h4>
+      <div class="About">
+        <article id="About">
+          <div class="article-about-header">
+            <h3>
+              <img src="./assets/images/Vector_wave.png" hight="10" alt="vector wave">
+              <b>ABOUT</b>
+            </h3>
+          </div>
+          <div class="about-left-frame">
+            <div class="stars">
+              <img src="./assets/images/Vector_star.png" hight="10" alt="⭐">
+              <img src="./assets/images/Vector_star.png" hight="10" alt="⭐">
+              <img src="./assets/images/Vector_star.png" hight="10" alt="⭐">
+              <img src="./assets/images/Vector_star.png" hight="10" alt="⭐">
+              <img src="./assets/images/Vector_star.png" hight="10" alt="⭐">
+            </div>
+            <p class="about-review">Working with Svetlana was interesting. She is a high-organized person, that can
+              create simple websites
+              with Yii-2 and React.js technologies.</p>
+            <div class="reviewer-info">
+              <img class="reviewer-info-foto" src="./assets/images/Rectangle%201.png" hight="10" alt="🔵">
+              <div class="reviewer-info-text">
+                <p class="reviewer-info-p1">Anastasiya Smirnova</p>
+                <p class="reviewer-info-p2">Middle+ FullStack Developer in GEROPHARM</p>
+              </div>
+            </div>
+          </div>
+        <div class="about-right-frame">
+            <h4 class="about-right-frame-h4">Develop websites for fast growing digital startups</h4>
+            <div class="about-achievements">
+            <p>2+
+              <br>
+              Months of experience
+            </p>
+            <p>2+
+              <br>
+              Projects completed
+            </p>
+            <p>5
+              <br>
+              Technologies learnt
+            </p>
+          </div>
+            <p>
+              <img src="./assets/images/icons8-html-64.png" width="30" alt="HTML+CSS"> <br>HTML+CSS
+              <br>
+              <img src="./assets/images/javascript_logo_icon_181330.png" width="30" alt="JS logo">
+              <img src="./assets/images/react_logo_icon_144942.png" width="30" alt="react logo">
+              <br>JS, React.js
+              <br>
+              <img src="./assets/images/php_logo_icon_144990.png" width="30" alt="php logo">
+              <img src="./assets/images/prog-yii_icon-icons.com_50765.png" width="30" alt="yii logo">
+              <br>PHP, YII-2
+              <br>
+              <img src="./assets/images/brand_mysql_icon_157867.png" width="30" alt="mysql logo">
+              <br>MySQL
+            </p>
+            </h4>
+        </div>
+      </div>
     </section>
 
     <hr>
 
     <section>
+      <div class="work">
       <article id="Work">
-        <h3>
-          <img src="./Vector_wave.png" hight="10" alt="vector wave">
-          <b>WORK</b>
-        </h3>
-        <h4>Bringing great results <br> for every client.</h4>
-
-        <article id="About this">
-          <img src="./Rectangle 2.png" width="250" alt="image">
-          <h5>About this
-            <img src="./arrow.png" width="10" alt="↗️">
-          </h5>
-          <p>Donec maximus blandit porta. Etiam porttitor libero tincidunt, tempus diam id, volutpat nulla. In id
-            pellentesque nunc.</p>
+        <div class="article-work-header">
+          <h3>
+            <img src="./assets/images/Vector_wave.png" hight="10" alt="vector wave">
+            <b>WORK</b>
+          </h3>
+        </div>
+        <h4 class="work-h4">Bringing great results for every client.</h4>
+        <div class="articles">
+        <article id="About-this">
+          <img class="about-image" src="./assets/images/Rectangle 2.png" width="250" alt="image">
+          <div>
+            <h5 class="About-this-h5">About this
+              <img class="About-this-arrow" src="./assets/images/arrow.png" width="10" alt="↗️">
+            </h5>
+            <p>Donec maximus blandit porta. Etiam porttitor libero tincidunt, tempus diam id, volutpat nulla. In id
+              pellentesque nunc.</p>
+          </div>
         </article>
 
         <article id="About that">
-          <img src="./Rectangle 2.png" width="250" alt="image">
-          <h5>About that
-            <img src="./arrow.png" width="10" alt="↗️">
+          <img class="about-image" src="./assets/images/Rectangle 2.png" width="250" alt="image">
+          <h5 class="About-this-h5">About that
+            <img class="About-this-arrow"src="./assets/images/arrow.png" width="10" alt="↗️">
           </h5>
           <p>Integer mollis fermentum urna, a tempor ante. Nam orci turpis, tristique sit amet pharetra nec, efficitur
             vel tellus.</p>
         </article>
 
         <article id="Look at my work">
-          <img src="./Rectangle 2.png" width="250" alt="image">
-          <h5>Look at my work
-            <img src="./arrow.png" width="10" alt="↗️">
+          <img class="about-image" src="./assets/images/Rectangle 2.png" width="250" alt="image">
+          <h5 class="About-this-h5">Look at my work
+            <img class="About-this-arrow" src="./assets/images/arrow.png" width="10" alt="↗️">
           </h5>
           <p>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
         </article>
 
         <article id="Something interesting">
-          <img src="./Rectangle 2.png" width="250" alt="image">
-          <h5>Something interesting
-            <img src="./arrow.png" width="10" alt="↗️">
+          <img class="about-image" src="./assets/images/Rectangle 2.png" width="250" alt="image">
+          <h5 class="About-this-h5">Something interesting
+            <img class="About-this-arrow" src="./assets/images/arrow.png" width="10" alt="↗️">
           </h5>
           <p>Suspendisse lacinia ante vel sapien gravida fringilla. Integer ipsum enim, maximus id turpis ut, sodales
             egestas libero. </p>
         </article>
 
         <article id="Origin UI/UX Design">
-          <img src="./Rectangle 2.png" width="250" alt="image">
-          <h5>Origin UI/UX Design
-            <img src="./arrow.png" width="10" alt="↗️">
+          <img class="about-image" src="./assets/images/Rectangle 2.png" width="250" alt="image">
+          <h5 class="About-this-h5">Origin UI/UX Design
+            <img class="About-this-arrow" src="./assets/images/arrow.png" width="10" alt="↗️">
           </h5>
           <p>Morbi sit amet eros sagittis, pellentesque lectus ac, interdum nibh.</p>
         </article>
 
-        <p>
+        <a href="" class="button-work" View all projects>
           VIEW ALL PROJECTS
-        </p>
+        </a>
       </article>
+    </div>
     </section>
 
-    <hr>
-
-    <section>
+    <section id="services-sec">
       <article id="Services">
-        <h3>
-          <img src="./Vector_wave.png" hight="10" alt="vector wave">
-          <b>SERVICES</b>
-        </h3>
-        <p>Pushing the <br> boundaries of your <br> potential</p>
+        <div class="article-services-header">
+          <h3>
+            <img src="./assets/images/Vector_wave.png" hight="10" alt="vector wave">
+            <b>SERVICES</b>
+          </h3>
+        </div>
 
-        <article id="Branding">
-          <img src="./services_image_1.png" width="20" alt="🔘">
-          <h5>Branding</h5>
-          <p>Refresh your logo, revamp your website, and even your letterhead— develop a cohesive aesthetic for your
+        <div class="services">
+        <h2 class="subtitle">Pushing the boundaries of your potential</h2>
+
+        <article class="services__item">
+          <img class="services__item-icon" src="./assets/images/services_image_1.png" width="20" alt="🔘">
+          <h5 class="services-h5">Branding</h5>
+          <p class="services-p">Refresh your logo, revamp your website, and even your letterhead— develop a cohesive aesthetic for your
             brand.</p>
         </article>
 
-        <article id="Packaging">
-          <img src="./services_image_2.png" width="20" alt="💡">
-          <h5>Packaging</h5>
-          <p>Rethink labels, boxes, signage, and everything that'll help your product make a great first impression.</p>
+        <article class="services__item">
+          <img class="services__item-icon" src="./assets/images/services_image_2.png" width="20" alt="💡">
+          <h5 class="services-h5">Packaging</h5>
+          <p class="services-p">Rethink labels, boxes, signage, and everything that'll help your product make a great first impression.</p>
         </article>
 
-        <article id="Memorabilia">
-          <img src="./services_image_3.png" width="20" alt="image">
-          <h5>Memorabilia</h5>
-          <p>Choose from easy, affordable options for merch like custom tees and sets of pins.</p>
+        <article class="services__item">
+          <img class="services__item-icon" src="./assets/images/services_image_3.png" width="20" alt="image">
+          <h5 class="services-h5">Memorabilia</h5>
+          <p class="services-p">Choose from easy, affordable options for merch like custom tees and sets of pins.</p>
         </article>
 
-        <article id="Visual Aids">
-          <img src="./services_image_4.png" width="20" alt="</>">
-          <h5>Visual Aids</h5>
-          <p>Make your point more convincingly with branded flyers, slides, catalogues, infographics.</p>
+        <article class="services__item">
+          <img class="services__item-icon" src="./assets/images/services_image_4.png" width="20" alt="</>">
+          <h5 class="services-h5">Visual Aids</h5>
+          <p class="services-p">Make your point more convincingly with branded flyers, slides, catalogues, infographics.</p>
         </article>
 
-        <p>
-          Contact me!
-        </p>
-
-        <img src="./services_image_5.png" width="50" alt="2 vector waves">
-
+        <article class="services__item">
+          <button class="services-button">Contact me</button>
+          <div class="services-button-waves">
+          <img src="./assets/images/services_image_5.png" alt="2 vector waves">
+          </div>
+        </article>
+      </div>
       </article>
+    </div>
     </section>
 
-    <hr>
 
     <section>
+      <div class="blog">
       <article id="Blog">
+        <div class="blog-header">
         <h3>
-          <img src="./Vector_wave.png" hight="10" alt="vector wave">
+          <img src="./assets/images/Vector_wave.png" hight="10" alt="vector wave">
           <b>BLOG</b>
         </h3>
+      </div>
         <P>Words On Design, Tech & Other Things I Love</P>
         <p>
           Explore all posts
-          <img src="./Blog_image_1.png" width="17" alt="➡️">
+          <img src="./assets/images/Blog_image_1.png" width="17" alt="➡️">
         </p>
 
         <article id="21 OCT, 2022">
-          <img src="./Blog_image_2.png" width="250" alt="image">
+          <img src="./assets/images/Blog_image_2.png" width="250" alt="image">
           <h5>21 OCT, 2022</h5>
           <h6>How I’ve started learning web</h6>
           <p>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
 
           <p>
             View post
-            <img src="./Blog_image_3.png" width="17" alt="➡️">
+            <img src="./assets/images/Blog_image_3.png" width="17" alt="➡️">
           </p>
         </article>
 
         <hr>
 
         <article id="03 DEC, 2022">
-          <img src="./Blog_image_2.png" width="250" alt="image">
+          <img src="./assets/images/Blog_image_2.png" width="250" alt="image">
           <h5>03 DEC, 2022</h5>
           <h6>Why does JavaScript is so exciting</h6>
           <p>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
 
           <p>
             View post
-            <img src="./Blog_image_3.png" width="17" alt="➡️">
+            <img src="./assets/images/Blog_image_3.png" width="17" alt="➡️">
           </p>
         </article>
 
         <hr>
 
         <article id="20 DEC, 2022">
-          <img src="./Blog_image_2.png" width="250" alt="image">
+          <img src="./assets/images/Blog_image_2.png" width="250" alt="image">
           <h5>20 DEC, 2022</h5>
           <h6>How I’ve developed this site</h6>
           <p>Vivamus mattis eu odio non aliquam. Vestibulum tristique congue laoreet. Nulla facilisi.</p>
 
           <p>
             View post
-            <img src="./Blog_image_3.png" width="17" alt="➡️">
+            <img src="./assets/images/Blog_image_3.png" width="17" alt="➡️">
           </p>
         </article>
+      </div>
 
         <hr>
 
         <article id="Work">
-          <img src="./Blog_image_4.png" width="250" alt="image">
+          <img src="./assets/images/Blog_image_4.png" width="250" alt="image">
           <h5>Work</h5>
           <p>Favorite projects, award-winning campaigns and more.</p>
 
           <p>
             View all
-            <img src="./Blog_image_6.png" width="17" alt="➡️">
+            <img src="./assets/images/Blog_image_6.png" width="17" alt="➡️">
           </p>
         </article>
 
         <article id="About">
-          <img src="./Blog_image_5.png" width="250" alt="image">
+          <img src="./assets/images/Blog_image_5.png" width="250" alt="image">
           <h5>About</h5>
           <p>My journey, career highlights and everything else you need to know.</p>
 
           <p>
             Get to know me
-            <img src="./Blog_image_6.png" width="17" alt="➡️">
+            <img src="./assets/images/Blog_image_6.png" width="17" alt="➡️">
           </p>
         </article>
     </section>
@@ -291,7 +333,7 @@
     <footer>
 
       <h3>
-        <img src="./Vector_wave.png" hight="10" alt="vector wave">
+        <img src="./assets/images/Vector_wave.png" hight="10" alt="vector wave">
         <b>CONTACT</b>
       </h3>
 
@@ -328,7 +370,7 @@
       </form>
 
       <p>
-        <img src="./footer.png" width="17" alt="C">
+        <img src="./assets/images/footer.png" width="17" alt="C">
         Powered by Svetlana, 2022
       </p>
 
