@@ -662,11 +662,33 @@ header {
 
     .footer-running-string-content {
         color: #D8D8EB;
-        margin-top: 30px;
-        margin-left: -239px;
+        padding: 24px 80px;
         font-size: 60px;
         line-height: 66px;
-        width: max-content;
+        width: 100%;
+        white-space: nowrap;
+        animation: footer-running-string 5s infinite linear;
+    }
+
+    .footer-running-string{
+        display: flex;
+        align-items: center;
+        background: #0B3142;
+        overflow: hidden;
+    }
+
+
+    .footer-running-string-content:after{
+        content: "Have something in mind? Let's connect. Have something in mind? Let's connect. Have something in mind? Let's connect.";
+    }
+
+    @keyframes footer-running-string{
+        0% {
+            transform: translateX(0)
+        }
+        100% {
+            transform: translateX(-50%)
+        }
     }
 
     .footer-links {
@@ -707,7 +729,7 @@ header {
     .footer-subscibtion__input-group {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         margin-top: 16px;
     }
 
@@ -721,7 +743,7 @@ header {
 
     .footer-subscibtion__button {
         height: 48px;
-        width: 140px;
+        width: 300px;
         border-radius: 24px;
         background: #9C92A3;
         border: 1px solid #fff6;
@@ -736,6 +758,64 @@ header {
         background: #FFFFFF33;
     }
 
+    .modalwin { 
+        height: 230px;  
+        width: 300px;
+        border: 3px solid white; 
+        background: #055866;
+        right: 0px;
+        left: 0px;
+        font-size: 12px; 
+        margin: 0 auto;
+        z-index: 2;
+        display: none;
+        position: fixed;
+        top: 30%;
+        padding: 15px;
+        color: white;
+        font-family: 'Epilogue', sans-serif; 
+    }
+    #shadow { 
+        position: fixed;
+        width:100%;
+        height:100%;
+        z-index: 1;
+        background:#000;
+        opacity: 0.5;
+        left:0;
+        top:0;
+    }
+
+    .window-form-subsribtion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .window-form-input {
+        margin-top: 10px;
+        padding: 5px;
+        width: 200px;
+    }
+
+    .window-form-button {
+        margin-top: 25px;
+        width: 80px;
+        padding: 7px;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: #9C92A3;
+        color: white;
+        border-radius: 20px;
+        border: 1px solid #9C92A3;
+    }
+
+    .window-form-button:hover {
+        background-color: #CEC2D6;
+        cursor: pointer;
+    }
+
     .footer-cb {
         height: 24px;
         width: 403px;
@@ -748,3 +828,5 @@ header {
         line-height: 24px;
         color: #FFFFFF;
     }
+
+    

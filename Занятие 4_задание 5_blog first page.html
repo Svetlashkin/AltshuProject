@@ -15,7 +15,6 @@
     href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto+Mono:wght@100;200;300;400&display=swap"
     rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -341,11 +340,12 @@
                 CONTACT
               </h3>
             </div>
-            <div>
+            <div class="footer-running-string">
               <p class="footer-running-string-content">
-                Have something in mind? Let's connect. Have something in mind? Let's connect.
+                Have something in mind? Let's connect. Have something in mind? Let's connect. Have something in mind? Let's connect. 
               </p>
             </div>
+          
             <div class="footer-links">
               <div>
                 <p>
@@ -367,11 +367,20 @@
               <div class="footer-subscribe">
                 <p>Subscribe to my weekly newsletter</p>
                 <div class="footer-subscibtion__input-group">
-                  <input class="footer-subscibtion__input" placeholder="     Enter your email..." type="email">
-                  <button class="footer-subscibtion__button" type="submit">Subscribe!</button>
+                  <button class="footer-subscibtion__button" type="submit" onclick="showModalWin()">Fill it!</button>
                 </div>
               </div>
+              <div style="text-align: center" id="popupWin" class="modalwin">
+                <h2> Subscribe to recieve news and information!</h2>
+                <form id="subsribtion" class="window-form-subsribtion">
+                    <input id="name" class="window-form-input" placeholder="Enter your name" >
+                    <input id="email" class="window-form-input" placeholder="Enter your email" type="email">
+                    <input class="window-form-button" type="submit" value="OK">
+                </form>
+              </div>          
             </div>
+          </div>
+          <div>
             <hr class="footer-line">
             <div class="footer-cb">
               <p class="footer-cb-text">
@@ -381,7 +390,8 @@
           </div>
         </div>
       </footer>
-
+    </section>
+    <script src="./assets/scripts/scripts.js"></script>
 </body>
 
 </html>
