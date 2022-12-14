@@ -332,9 +332,9 @@
             }
               }
 
-            echo '<a name="yakor_add"><br></a>';
+            echo '<a name="yakor_add"></a>';
 
-            echo '<a href=index.php?m=1&#yakor3 class="nav-li-item a"><button class="blog-title-button">
+            echo '<a href=index.php?m=1&#yakor3 style="text-decoration: none;"><button class="blog-title-button">
             Explore all posts <img src="./assets/images/Blog_image_1.png">
             </button></a>';
             

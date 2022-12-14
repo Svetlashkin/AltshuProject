@@ -1114,7 +1114,12 @@ header {
     width: 205px;
     font-size: 16px;
     margin-left: 60px;
+    margin-bottom: 40px;
     text-decoration: none;
+}
+
+.blog-title-button_link {
+    text-decoration: none; 
 }
 
 .blog-news-images {
