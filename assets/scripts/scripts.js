@@ -17,7 +17,7 @@ function showModalWin() {
 
 //валидация формы
 
-let form = document.querySelector("#subsribtion")
+let form = document.querySelector("#subsribtion");
 let validateBtn = form.querySelector('.window-form-button');
 
 form.addEventListener("submit", (event) => {
@@ -26,15 +26,14 @@ form.addEventListener("submit", (event) => {
     let y = document.querySelector('#email').value;
 
     if (x == "") {
+        // event.preventDefault()
       alert("Name must be filled out!");
     } 
     else if (y == "") {
+        // event.preventDefault()
         alert("Email must be filled out!");
     } else validateBtn.addEventListener('click', function(event) {
         form.submit(alert('You have subscribed to the news!'));
     });
     event.preventDefault()
 });
-
-
-

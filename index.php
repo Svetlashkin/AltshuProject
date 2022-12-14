@@ -159,7 +159,7 @@
           <div class="articles">
             <div class="work-articles-block">
               <article id="About-this">
-                <img class="about-image" src="./assets/images/Rectangle 2.png" alt="image">
+                <img class="about-image" src="./assets/images/work_1.jpg" alt="image">
                 <div class="work-articles-block-text">
                   <h5 class="About-this-h5">About this
                     <img class="About-this-arrow" src="./assets/images/arrow.png" alt="↗️">
@@ -172,7 +172,7 @@
             </div>
             <div class="work-articles-block">
               <article id="About that">
-                <img class="about-image" src="./assets/images/Rectangle 2.png" alt="image">
+                <img class="about-image" src="./assets/images/work_2.jpg" alt="image">
                 <div class="work-articles-block-text">
                   <h5 class="About-this-h5">About that
                     <img class="About-this-arrow" src="./assets/images/arrow.png" alt="↗️">
@@ -185,7 +185,7 @@
             </div>
             <div class="work-articles-block">
               <article id="Look at my work">
-                <img class="about-image" src="./assets/images/Rectangle 2.png" alt="image">
+                <img class="about-image" src="./assets/images/work_3.jpg" alt="image">
                 <div class="work-articles-block-text">
                   <h5 class="About-this-h5">Look at my work
                     <img class="About-this-arrow" src="./assets/images/arrow.png" alt="↗️">
@@ -196,7 +196,7 @@
             </div>
             <div class="work-articles-block">
               <article id="Something interesting">
-                <img class="about-image" src="./assets/images/Rectangle 2.png" alt="image">
+                <img class="about-image" src="./assets/images/work_4.jpg" alt="image">
                 <div class="work-articles-block-text">
                   <h5 class="About-this-h5">Something interesting
                     <img class="About-this-arrow" src="./assets/images/arrow.png" alt="↗️">
@@ -209,7 +209,7 @@
             </div>
             <div class="work-articles-block">
               <article id="Origin UI/UX Design">
-                <img class="about-image" src="./assets/images/Rectangle 2.png" alt="image">
+                <img class="about-image" src="./assets/images/work_5.jpg" alt="image">
                 <div class="work-articles-block-text">
                   <h5 class="About-this-h5">Origin UI/UX Design
                     <img class="About-this-arrow" src="./assets/images/arrow.png" alt="↗️">
@@ -289,48 +289,85 @@
                 <b>BLOG</b>
               </h3>
             </div>
-            <div class="blog-title">
-              <P class="blog-title-p">Words On Design, Tech & Other Things I Love</P>
-              <button class="blog-title-button">
-                Explore all posts
-                <img src="./assets/images/Blog_image_1.png">
-              </button>
-            </div>
+            <P class="blog-title-p"><br>Words On Design, Tech & Other Things I Love</P>
     
-            <div class="blog-articles">
-              <article class="blog-news-articles">
-                <img class="blog-news-images" src="./assets/images/Blog_image_2_1.jpg" alt="image">
+            <?php
+
+            if(empty($_GET['m']))
+            $_GET['m']=0;          
+
+            echo '<div class="blog-articles">';
+        
+              $dbConnect = mysqli_connect("localhost", "root", "", "altshu_final_project");
+              $query = mysqli_query($dbConnect, "SELECT * FROM news");
+              
+              while ($row = mysqli_fetch_array($query)) { 
+            if ($_GET['m']==0 and $row['id']<4)
+            { 
+            echo '<a name="yakor'.$row['id'] . '">
+            <article class=blog-news-articles></a>
+              <img class="blog-news-images" src="' . $row['image_url'].'" alt="image">
+              <div class="blog-news-articles-data">
+                <h5 class="blog-news-h5">' . $row['created_at'] . '</h5>
+                <h6 class="blog-news-h6">' . $row['title'] . '</h6>
+                <p class="blog-news-p">' . $row['description'] . '</p>
+              </div>
+              <a href="news_' . $row['id'] . '.php" class="blog-news-articles__link">View post </a>
+            </article> ';
+            }
+            elseif (($row['id']<4) or
+                    ($_GET['m']==1 and $row['id']>3)) {
+              { 
+                echo '<a name="yakor'.$row['id'] . '">
+                <article class=blog-news-articles></a>
+                  <img class="blog-news-images" src="' . $row['image_url'].'" alt="image">
+                  <div class="blog-news-articles-data">
+                    <h5 class="blog-news-h5">' . $row['created_at'] . '</h5>
+                    <h6 class="blog-news-h6">' . $row['title'] . '</h6>
+                    <p class="blog-news-p">' . $row['description'] . '</p>
+                  </div>
+                  <a href="news_' . $row['id'] . '.php" class="blog-news-articles__link">View post </a>
+                </article> ';
+                }
+            }
+              }
+
+            echo '<a name="yakor_add"><br></a>';
+
+            echo '<a href=index.php?m=1&#yakor3 class="nav-li-item a"><button class="blog-title-button">
+            Explore all posts <img src="./assets/images/Blog_image_1.png">
+            </button></a>';
+            
+            
+            // echo $_GET['m'];
+            // if($_GET['m'] = 1) { 
+              while ($row = mysqli_fetch_array($query)) { 
+             if($row['id']==4) { 
+              echo '<a name="yakor'.$row['id'] . '">
+              <article class=blog-news-articles></a>
+                <img class="blog-news-images" src="' . $row['image_url'].'" alt="image">
                 <div class="blog-news-articles-data">
-                  <h5 class="blog-news-h5">21 OCT, 2022</h5>
-                  <h6 class="blog-news-h6">How I’ve started learning web</h6>
-                  <p class="blog-news-p">After 15 years of working in the office, I realized that it is time to change
-                    something in my life.</p>
+                  <h5 class="blog-news-h5">' . $row['created_at'] . '</h5>
+                  <h6 class="blog-news-h6">' . $row['title'] . '</h6>
+                  <p class="blog-news-p">' . $row['description'] . '</p>
                 </div>
-                <a href="/posts/1" class="blog-news-articles__link">View post </a>
-              </article>
-    
-              <article class="blog-news-articles">
-                <img class="blog-news-images" src="./assets/images/Blog_image_2_2.jpg" alt="image">
-                <div class="blog-news-articles-data">
-                  <h5 class="blog-news-h5">03 DEC, 2022</h5>
-                  <h6 class="blog-news-h6">Why does JavaScript is so exciting</h6>
-                  <p class="blog-news-p"> It is amazing what you can achieve with a few lines of JavaScript code.</p>
-                </div>
-                <a href="/posts/2" class="blog-news-articles__link">View post </a>
-              </article>
-    
-    
-              <article class="blog-news-articles">
-                <img class="blog-news-images" src="./assets/images/Blog_image_2_3.jpg" alt="image">
-                <div class="blog-news-articles-data">
-                  <h5 class="blog-news-h5">20 DEC, 2022</h5>
-                  <h6 class="blog-news-h6">How I’ve developed this site</h6>
-                  <p class="blog-news-p">Building a website. Uhh. Sounds like a headache.</p>
-                </div>
-                <a href="/posts/3" class="blog-news-articles__link">View post <span
-                    class="blog-news-articles__link-arrow"></span></a>
-              </article>
-            </div>
+                <a href="news_' . $row['id'] . '.php" class="blog-news-articles__link">View post </a>
+              </article> ';
+               }
+               else{echo '<br>';}
+                }
+              // }
+
+            echo '</div>';
+
+
+
+            echo '            <div class="blog-title">
+            
+
+          </div>';
+                       
+            ?>
           </article>
         </div>
       </div>

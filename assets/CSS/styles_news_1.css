@@ -1,0 +1,481 @@
+* {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #055866;
+    max-width: 1440px;
+    min-height: 283px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 32px;
+    max-width: 100vw;
+    margin: 20px 80px;
+}
+
+.header-content {
+    background: #055866;
+    min-height: 200px;
+    max-width: 1280px;
+    margin: 80px 80px 0px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
+
+.header-h1 {
+    background: #055866;
+    width: max-content;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-h1-image {
+    height: 32px;
+    width: 32px;
+    border-radius: 11px;
+    font-family: 'Roboto Mono', sans-serif;
+    margin-right: 10px;
+}
+
+.header-h1-text {
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    width: 70%;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-list {
+    width: 470px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-li-item a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-li-item a:hover {
+    text-decoration: underline;
+}
+
+.blog-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: -webkit-fill-available;
+}
+
+.blog {
+    max-width: 1280px;
+    margin: 20px 80px;
+}
+
+.blog-articles {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 960px;
+    margin-top: 80px;
+}
+
+.blog-news-images {
+    width: 100%;
+    background-color: #D9D9D9;
+}
+
+.blog-news-articles-data {
+    min-height: 240px;
+    width: 100%;
+}
+
+.blog-news-h5 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9C92A3;
+}
+
+.blog-news-h6 {
+    width: 60%;
+    margin-top: 19px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 66px;
+    color: #000000;
+}
+
+.blog-news-p {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.footer {
+    max-width: 1440px;
+    height: 750px;
+    background-color: #0B3142;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.footer-content {
+    height: 582px;
+    max-width: 1280px;
+    padding-top: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.footer-nav-item {
+    height: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer-running-string-content {
+    color: #D8D8EB;
+    padding: 24px 80px;
+    font-size: 60px;
+    line-height: 66px;
+    width: 100%;
+    white-space: nowrap;
+    animation: footer-running-string 4.5s infinite linear;
+    margin-inline-start: 80px;
+}
+
+.footer-running-string {
+    display: flex;
+    align-items: center;
+    background: #0B3142;
+    overflow: hidden;
+}
+
+
+.footer-running-string-content:after {
+    content: "Have something in mind?  Let's connect.  Have something in mind?  Let's connect.  Have something in mind?  Let's connect.  Have something in mind?  Let's connect.  Have something in mind?  Let's connect.";
+    margin-inline-start: 80px;
+}
+
+@keyframes footer-running-string {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-50%)
+    }
+}
+
+.footer-links {
+    margin: 110px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-mail {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-navigation {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#footer-nav {
+    list-style-type: none;
+}
+
+.footer-subscribe {
+    height: 91px;
+    width: 460px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-subscibtion__input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer-subscibtion__input {
+    height: 48px;
+    width: 290px;
+    border-radius: 24px;
+    background: transparent;
+    border: 1px solid #fff6;
+}
+
+.footer-subscibtion__button {
+    height: 48px;
+    width: 300px;
+    border-radius: 24px;
+    background: #9C92A3;
+    border: 1px solid #fff6;
+    color: #FFFFFF;
+}
+
+.footer-line {
+    margin: 0px 80px;
+    height: 1px;
+    max-width: 100%;
+    top: 274px;
+    background: #FFFFFF33;
+}
+
+.modalwin {
+    height: 230px;
+    width: 300px;
+    border: 3px solid white;
+    background: #055866;
+    right: 0px;
+    left: 0px;
+    font-size: 12px;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    top: 30%;
+    padding: 15px;
+    color: white;
+    font-family: 'Epilogue', sans-serif;
+}
+
+#shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #000;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+}
+
+.window-form-subsribtion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.window-form-input {
+    margin-top: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+.window-form-button {
+    margin-top: 25px;
+    width: 80px;
+    padding: 7px;
+    font-family: 'Epilogue', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #9C92A3;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid #9C92A3;
+}
+
+.window-form-button:hover {
+    background-color: #CEC2D6;
+    cursor: pointer;
+}
+
+.footer-cb {
+    height: 24px;
+    width: 403px;
+    margin: 38px 1220px 58px 109px;
+}
+
+.footer-cb-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.blog-news-articles__link {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    color: #9C92A3;
+    margin-top: 70px;
+}
+
+.blog-news-articles__link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #908399;
+}
+
+@media (max-width : 375px) {
+
+
+    .header-navigation {
+        margin: 20px;
+    }
+
+    .header-h1 {
+        font-size: 10px;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    .nav-li-item a {
+        font-size: 13px;
+    }
+
+    .header-content {
+        margin: 20px;
+        min-height: 100%;
+    }
+
+    .header-h1-text {
+        font-size: 34px;
+        line-height: 40px;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .blog {
+        margin: 0px 20px;
+    }
+
+    .blog-news-images {
+        width: 100%;
+    }
+
+    .blog-news-articles-data {
+        min-height: 150px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .blog-news-h5 {
+        font-size: 18px;
+    }
+
+    .blog-news-h6 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .blog-news-p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .footer {
+        height: 80vh;
+    }
+
+    .footer-content {
+        padding-top: 50px;
+        margin-left: 20px;
+        height: 75%;
+    }
+
+    .footer-running-string {
+        visibility: hidden;
+    }
+
+    .footer-links {
+        margin: -80px 20px 0px 10px;
+        flex-wrap: wrap;
+        width: 80vw
+    }
+
+    .footer-mail,
+    .footer-navigation {
+        font-size: 16px;
+    }
+
+    .footer-subscribe {
+        width: 100vw;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    .footer-subscibtion__button {
+        width: 250px;
+    }
+
+    .footer-line {
+        top: 174px;
+    }
+
+    .footer-line {
+        margin: 0px 20px;
+    }
+
+    .footer-cb {
+        width: 100%;
+    }
+
+    .footer-cb-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
